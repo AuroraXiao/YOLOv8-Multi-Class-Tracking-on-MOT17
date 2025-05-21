@@ -2,7 +2,7 @@
 
 > A deep learning pipeline for pedestrian and multi-class object tracking using YOLOv8, trained and tested on the MOT17 dataset.  
 
----
+
 
 ## 🧠 Project Overview
 
@@ -14,7 +14,7 @@ This project demonstrates how to process, train, and evaluate a custom object de
 - 📊 **Evaluation**: Analyze detection performance and visualize predictions on video.
 - 🎥 **Application-Oriented**: Simulates real-world tracking in urban scenes (occlusion, crowding, motion blur).
 
----
+
 
 ## 📂 Dataset: MOT17
 
@@ -38,18 +38,21 @@ The [MOT17](https://motchallenge.net/data/MOT17/) dataset includes labeled video
 |10  | occluder full        | Fully blocking objects         |
 |11  | reflection           | False positives (glass, etc.)  |
 
----
+
 
 ## 🚀 How to Run
 
 ### 1. Environment Setup
 ```bash
 pip install ultralytics
-```bash
-
+```
 ✅ Code was developed and tested on Google Colab.
 
 ### 2. Prepare Dataset
 - Mount Google Drive.
+```bash
+from google.colab import drive
+drive.mount('/content/drive')
+```
 - Copy the MOT17 dataset to your working directory.
 - Run the notebook to convert gt.txt into YOLO-format label files.
